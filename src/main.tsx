@@ -1,20 +1,27 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
 import "./index.css";
-import ProductContextProvider from "./context/ProductContextProvider";
-import { CounterContext } from "./context/CountContext";
-import CounterContextProvider from "./context/CounterContextProvider";
+import App from "./App";
+import { BrowserRouter, Form } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ShoppingContextProvider } from "./component/CONTEXT/ShoppingCart";
+const queryClient= new QueryClient();
 ReactDOM.createRoot(document.getElementById("root")!).render(
-    <CounterContextProvider>
+
+    <ShoppingContextProvider>
+    <QueryClientProvider client={queryClient}>
         <BrowserRouter>
             <App />
         </BrowserRouter>
-    </CounterContextProvider>
-);
+    </QueryClientProvider>
 
-/**
- * - hướng dẫn cài đặt react sử dụng vitejs
- * npm create vite@latest react-vite -- --template react-ts
- *
- */
+
+    </ShoppingContextProvider>
+
+
+
+
+
+
+
+);

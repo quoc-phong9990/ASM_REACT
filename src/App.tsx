@@ -1,17 +1,46 @@
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import ProductAdd from "./components/ProductAdd";
-import ProductEdit from "./components/ProductEdit";
-import Products from "./components/Products";
-import { useEffect, useState } from "react";
-import { addProduct, editProduct, getProducts, removeProduct } from "./services/product";
-import { IProduct } from "./interfaces/Product";
-import Counter from "./components/Counter";
+import { Route, Router, Routes } from "react-router-dom";
+import ProductList from "./component/PRODUCT/ProductList";
+import ProductAdd from "./component/PRODUCT/ProductAdd";
+import ProductEdit from "./component/ProductEdit";
+import './App.css'
+import Home from "./component/LAYOUTUSER/Home";
+import Layoutadmin from "./component/ADMIN/LayoutAdmin";
+import ProductDetail from "./component/LAYOUTUSER/ProductDetail";
+import Sigup from "./component/Sigup";
+import Signin from "./component/Signin";
+import Cart from "./component/LAYOUTUSER/Cart";
+import Checkout from "./component/LAYOUTUSER/Checkout";
+import Show from "./component/PRODUCT/ShowProducts";
+import SlideShow from "./component/LAYOUTUSER/SlideShow";
+
+
 
 function App() {
+
+
     return (
         <>
-            <Counter />
+
+            <Routes >
+                <Route path="home" element={<Home />} />
+                <Route path="detail/:id" element={<ProductDetail />} />
+                <Route path="signup" element={<Sigup />} />
+                <Route path="signin" element={<Signin />} />
+
+                <Route path="admin" element={<Layoutadmin />}>
+                    <Route path="list" element={<ProductList />} />
+                    <Route path="add" element={<ProductAdd />} />
+                    <Route path="edit/:id" element={<ProductEdit />} />
+                </Route>
+
+                <Route path="cart" element={<Cart />} />
+
+                <Route path="checkout" element={<Checkout />} />
+                <Route path="show" element={<Show />} />
+        
+
+
+            </Routes>
         </>
     );
 }
