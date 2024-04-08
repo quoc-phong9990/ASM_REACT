@@ -1,0 +1,87 @@
+{
+  "checkouts": [
+    {
+      "id": "e6f7",
+      "name": "product3",
+      "email": "23400",
+      "address": "15 vo quy huan",
+      "cty": "ha noi",
+      "state": "chua hoan thanh",
+      "singlecode": "23400"
+    },
+    {
+      "name": "nguyen quoc phong",
+      "email": "phongnq1122hihi@gmail.com",
+      "address": "16 vo quy huan ",
+      "cty": "hanoi",
+      "state": "hoan thanh",
+      "singlecode": 1111,
+      "id": "-wRJV3X"
+    },
+    {
+      "name": "bánh đậu xanh xanh sanh",
+      "email": "pn4156031@gmail.com",
+      "address": "11 vo quy huan ",
+      "cty": "ha noi",
+      "state": "hoan thanh",
+      "singlecode": 11111,
+      "id": "U2-G93B"
+    },
+    {
+      "name": "nguyen quoc phong",
+      "email": "pn4156031@gmail.com",
+      "address": "11 vo quy huan ",
+      "cty": "ha noi",
+      "state": "chua hoan thanh",
+      "singlecode": 0,
+      "id": "DNnblHX"
+    },
+    {
+      "name": "nguyen quoc phong",
+      "email": "pn4156031@gmail.com",
+      "address": "11 vo quy huan ",
+      "cty": "ha noi",
+      "state": "chua hoan thanh",
+      "singlecode": 0,
+      "id": "0ccrZ6s"
+    }
+  ],
+  "products": [
+    {
+      "id": "e6f7",
+      "name": "product3",
+      "price": "100",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4WmAlrjjUTOOYs35vGliGHYUdtUkXyQ-t9cyThMmGX0Uh4gtmZ0lkJE8ixZIRSSmgJzI&usqp=CAU",
+      "description": "The Lorem Ipsum for photos."
+    },
+    {
+      "id": "14cb",
+      "name": "product4",
+      "price": 444,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ1TkAyxsXfKLdoyor_xEregNZcbrYeYfXBOEcs9warQYvEijtHdb0YzLLY-73_InzjN8&usqp=CAU",
+      "description": "product4"
+    },
+    {
+      "id": "c23f",
+      "name": "product5",
+      "price": 500,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyJ_JYriTyXQQhK1fG3TB4RfLlExy4lIt0tB4Ypneh6ho8yIJ-3TIZuZelvoqG5QGqN2c&usqp=CAU",
+      "description": "dipscription 5"
+    },
+    {
+      "id": "b652",
+      "name": "product6",
+      "price": 700,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW1jMfc4_ELOSrBYwk5m6HjRinrZ8SZUCdoSOKeb1V2FfEx37xTm3VB-l9EoST8z5_1MI&usqp=CAU",
+      "description": "product7 new"
+    }
+  ],
+  "users": [
+    {
+      "email": "phongnqph29928@fpt.edu.vn",
+      "password": "$2a$10$spNNruVUugPnWfVFF6vx5OJg6hyaHBMMjAtNYc8p0ul4kQuhycBhK",
+      "name": "nguyen quoc phong",
+      "id": 1
+    }
+  ]
+}
